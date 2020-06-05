@@ -1,0 +1,309 @@
+﻿
+/*Basic Setup*/
+html {
+    background-color: #fff;
+    color: #555;
+    background-image: -webkit-gradient(linear, left center, right center, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.3))), url('../../Resources/DentalChair.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 64px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+/*Header*/
+.row {
+    margin: 0 auto;
+}
+
+.card {
+    height: 10%;
+    border-top: 4px solid mediumturquoise;
+}
+
+.pading1 {
+    padding-top: 1%;
+}
+
+/*Header- list Items*/
+.main-nav {
+    width: 100%;
+    padding-left: 9%;
+}
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+        .main-nav li a, .timeSlotNav li a {
+            color: lightslategray;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+            .main-nav li a:hover {
+                border-bottom: 2px solid slategray;
+            }
+
+/*Header- Contact Info*/
+.theContactInfo, .theSearchBar {
+    border: 1px solid gray;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/*Header - Search Bar*/
+.theSearchBar {
+    width: 4%;
+    border-right: 1px solid white;
+}
+
+/*Section- the page*/
+.the-page {
+    color: #fff;
+    /*left: 10%;*/
+    position: absolute;
+    top: 16%;
+    padding-bottom: 2%;
+}
+
+/*Section the page- the content slot*/
+.the-content-slot {
+    width: auto;
+}
+
+.textToUpperCase {
+    text-transform: uppercase;
+}
+
+.blueLink {
+    color: lightblue;
+}
+
+.letterSpacing {
+    letter-spacing: 5px;
+}
+
+
+
+.paragraphFontAdjustment {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.meetTheDocBTN {
+    left: 10%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+    .meetTheDocBTN > .btn {
+        border-radius: 200px;
+        font-weight: 700;
+        color: gray;
+        font-size: 15px;
+    }
+
+        .meetTheDocBTN > .btn:hover {
+            background-color: slategray;
+            color: white;
+            transition: background-color 0.6s, color 0.6s;
+        }
+
+/*Section the page- the time slot*/
+
+.the-time-slot .row {
+    background: white;
+    padding: 0 1.8%;
+}
+
+.bookAnAppointment {
+    border-bottom: 2px solid mediumturquoise;
+    color: mediumturquoise;
+}
+
+    .bookAnAppointment > .nav-link {
+        color: mediumturquoise;
+    }
+
+.timeSlotNav {
+    width: 100%
+}
+
+    .timeSlotNav li {
+        width: 50%;
+        text-align: center;
+    }
+
+        .timeSlotNav li a {
+            color: lightslategray;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+/*the fieldset dropdown*/
+.SelectMenu, .continueBTN {
+    padding-bottom: 1%;
+    width: 100%;
+    position: relative;
+}
+
+    .SelectMenu > fieldset {
+        color: mediumturquoise;
+        border: 2px solid mediumturquoise;
+    }
+
+    .SelectMenu legend {
+        font-size: 13px;
+        width: 14.5%;
+        padding-left: 1%;
+        margin: -1%;
+        font-weight: 500;
+    }
+
+    .SelectMenu select,
+    .SelectMenu select:focus {
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        font-size: 14px;
+        -webkit-appearance: none;
+    }
+
+    .SelectMenu:after {
+        border-left: 0.50em solid transparent;
+        border-right: 0.50em solid transparent;
+        border-top: 1em solid mediumturquoise;
+        position: absolute;
+        top: 43%;
+        right: 8%;
+        content: "";
+    }
+
+    .continueBTN > button {
+        background-color: mediumturquoise;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+/*the calendar slot*/
+
+.dateField {
+    text-align: center;
+    font-weight: 500;
+    color: slategray;
+    background: transparent !important;
+}
+
+.CalendarSlot i {
+    font-size: 23px;
+}
+
+.enabledGlyphicon {
+    font-size: 27px;
+    color: mediumturquoise;
+    cursor: pointer;
+}
+
+.DisabledGlyphicon {
+    color: lightgray;
+    cursor: not-allowed;
+}
+
+.slots {
+    width: 100%;
+}
+
+    .slots table {
+        color: slategray;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+.table td, .table th {
+    padding: .45rem !important;
+    text-align: center;
+}
+
+.continueBTN {
+    padding-bottom: 2.5%;
+}
+
+
+.slotAvailable:hover {
+    background-color: mediumturquoise;
+    color: white;
+    transition: background-color 0.6s, color 0.6s;
+    cursor: pointer;
+}
+
+
+.continueBTNRow {
+    border-radius: 0 0 13px 13px;
+}
+
+.slotAlraedyBooked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slotIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*Media Query*/
+
+/*Smart phone*/
+@media only screen and (max-width:767px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .paragraphFontAdjustment {
+        font-size: 14px;
+    }
+
+    .main-nav {
+        padding-left: 4%;
+    }
+
+        .main-nav li a {
+            font-size: 13px;
+        }
+
+    .theSearchBar {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    .main-nav li {
+        margin-left: 22px;
+    }
+}
+
+

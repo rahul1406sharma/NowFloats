@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dixit Healing Chamber</title>
+    <link href="../StyleSheets/Vendor/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../StyleSheets/Custom/Theme.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="card">
+        <nav class="pading1">
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#"> More info</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="theSearchBar float-right">
+                        <a href="#">
+                            &nbsp;
+                            <i class="fa fa-search"></i>
+                            &#9;
+                        </a>
+                    </li>
+                    <li class="theContactInfo float-right">
+                        <a href="#">
+                            &nbsp;
+                            <i class="fa fa-volume-control-phone"></i>
+                            &nbsp;
+                            +91  9038379140
+                            &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="the-page">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="the-content-slot col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                <h6 class="textToUpperCase letterSpacing">
+                    Welcome to
+                </h6>
+                <h1>
+                    Dixit Healing
+                    Chamber
+                </h1>
+                <p class="paragraphFontAdjustment">
+                    Homeopathic clinic of Dr. Shravan Dixit is located in Jubilee Hills, Hyderabad. The
+                    clinic was established in 2006 and is the most reputed clinic in the vincity.
+                    Guided by a clear vision... &nbsp;<a class="textToUpperCase blueLink" href="#">See more</a>
+                </p>
+                <div class="meetTheDocBTN">
+                    <a class="btn btn-light" href="#">Meet the doctor</a>
+                </div>
+            </div>
+            <div class="the-time-slot col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <ul class="nav-tabs nav timeSlotNav">
+                        <li class="nav-item bookAnAppointment">
+                            <a href="#" class="nav-link" active>Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Have an enquiry?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="SelectMenu">
+                        <fieldset>
+                            <legend>Purpose</legend>
+
+                            <select class="form-control">
+                                <option class=""> Consultation</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group CalendarSlot">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" onclick="ChangeDate('Prev')"><i class="fa fa-caret-left DisabledGlyphicon"></i></span>
+                        </div>
+                        <input type="text" id="" class="form-control dateField" disabled />
+                        <div class="input-group-append">
+                            <span class="input-group-text" onclick="ChangeDate('Next')"><i class="fa fa-caret-right enabledGlyphicon"></i></span>
+                        </div>
+                    </div>
+                    <div class="slots">
+                        <table class="table table-bordered">
+                            <!-- Data from the API has to be appended here -->
+                            <tbody class="appendAPISlots"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row continueBTNRow">
+                    <div class="continueBTN">
+                        <button type="button" class="btn btn-sm btn-block">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script starts -->
+    <script src="../Scripts/Vendor/jquery.min.js"></script>
+    <script src="../Scripts/Custom/App.js"></script>
+</body>
+</html>
