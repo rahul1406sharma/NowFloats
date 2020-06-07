@@ -1,6 +1,7 @@
 ﻿
 $(function () {
     onInit();
+
 });
 
 
@@ -16,6 +17,7 @@ onInit = () => {
         url: "http://www.mocky.io/v2/5ed9ed653300006e0079e708",
         type: 'GET',
         async: true,
+        dataType: 'jsonp',
         success: function (data) {
             prepareHTMLString(data);
 
@@ -89,3 +91,9 @@ prepareHTMLString = (data) => {
     }
     $('.appendAPISlots').append(htmlString);
 }
+
+$('.Nav-Icon').click(function () {
+    $('.main-nav').toggleClass('main-nav-visibility');
+    $('.the-page').toggleClass('the-pageSlideDown');
+
+});
